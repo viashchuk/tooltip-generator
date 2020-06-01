@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="5px" viewBox="0 0 7 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>tick icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ooto-Productivity-Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ooto-Create-event" transform="translate(-870.000000, -518.000000)" fill="#FFFFFF">
+            <g id="specify-event-details-card" transform="translate(825.000000, 236.000000)">
+                <g id="notify-people" transform="translate(29.000000, 237.000000)">
+                    <g id="slack" transform="translate(14.000000, 32.000000)">
+                        <path d="M5.46130913,17.7625279 C5.19473336,18.0291036 4.76316696,18.0291036 4.49727297,17.7625279 L3.05053696,16.3164736 C2.78464298,16.0505796 2.78464298,15.6183315 3.05053696,15.3524375 C3.31711273,15.0858617 3.74867913,15.0858617 4.01457312,15.3524375 L4.97929105,16.3164736 L7.38938144,13.9063832 C7.6559572,13.6398075 8.0875236,13.6398075 8.35341759,13.9063832 C8.61999336,14.1722772 8.61999336,14.6038436 8.35341759,14.8704194 L5.46130913,17.7625279 Z" id="tick-icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

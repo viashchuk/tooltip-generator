@@ -1,0 +1,306 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-tooltip {
+    @apply rounded-full flex items-center justify-center bg-blue-500 h-20 w-20;
+    @apply text-white uppercase text-sm font-bold leading-none -mt-20 relative;
+}
+
+.btn-tooltip:hover {
+    animation: none;
+}
+
+.btn-tooltip:before,
+.btn-tooltip:after {
+    content: '';
+    @apply absolute rounded-full;
+    background: rgba(77, 161, 255, .7);
+    animation: puls 1.5s linear infinite;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.btn-tooltip:after {
+    animation-delay: .3s;
+}
+
+@keyframes puls {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+.settings__item {
+    @apply w-full flex items-center justify-between text-sm uppercase;
+    @apply font-bold text-gray-600 pb-3 border-b border-gray-300 leading-none transition duration-500;
+}
+
+.settings__item:focus {
+    @apply outline-none;
+}
+
+.settings__item > img {
+    @apply transition duration-500;
+}
+
+.settings__item:hover,
+.settings__item.active {
+    @apply text-gray-600;
+}
+
+.settings__item:hover > img,
+.settings__item.active > img {
+    @apply opacity-100;
+}
+
+.settings__item.active > img {
+    @apply transform rotate-180;
+}
+
+.custom-checkbox input {
+    @apply hidden;
+}
+
+.custom-checkbox {
+    @apply relative flex items-center text-blue-900 capitalize mb-3 cursor-pointer;
+}
+
+.custom-checkbox span {
+    @apply flex items-center justify-center bg-blue-500o25 w-4 h-4 rounded-full mr-3 border border-blue-500o25 transition duration-500;
+}
+
+.custom-checkbox span:before {
+    content: '';
+    width: 8px;
+    height: 6px;
+    background: url('../icons/check.svg');
+    background-size: cover;
+    @apply opacity-0 transition duration-500;
+}
+
+.custom-checkbox:hover span {
+    @apply border-blue-500;
+}
+
+.custom-checkbox input:checked ~ span {
+    @apply border-blue-500 bg-blue-500;
+}
+
+.custom-checkbox input:checked ~ span:before {
+    @apply opacity-100;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .2s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+input:focus,
+button:focus,
+select:focus {
+    @apply outline-none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+    @apply p-0;
+}
+
+
+input[type=color]::-webkit-color-swatch {
+    @apply border-none;
+}
+
+.input--number button:disabled {
+    @apply opacity-25 cursor-not-allowed;
+}
+
+.vue-range-slider.slider-component {
+    padding: 0 !important;
+}
+
+.vue-range-slider.slider-component .slider .slider-dot.slider-always .slider-tooltip-wrap {
+    top: 100%;
+    transform: translate(-50%, 0);
+}
+
+.vue-range-slider.slider-component .slider-tooltip-wrap.slider-tooltip-top .slider-tooltip::before {
+    top: -10px;
+    bottom: 0;
+    transform: translate(-50%, 0) rotate(180deg);
+}
+
+.vue-range-slider.slider-component .slider {
+    @apply bg-gray-400;
+}
+
+.vue-range-slider.slider-component.slider-horizontal .slider-process {
+    @apply bg-blue-500;
+}
+
+.vue-range-slider.slider-component .slider-tooltip-wrap .slider-tooltip {
+    @apply bg-blue-500 border-blue-500;
+}
+
+.switch input {
+    @apply hidden;
+}
+
+.switch span {
+    @apply flex bg-gray-900o11 rounded-full w-12 h-5 relative cursor-pointer;
+    transition: .3s;
+}
+
+.switch span:before {
+    content: '';
+    @apply absolute w-6 h-6 bg-white left-0 rounded-full;
+    border: 1px solid #D0D7DD;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .04);
+    top: -2px;
+    transition: .2s;
+}
+
+.switch input:checked ~ span {
+    @apply bg-blue-500;
+}
+
+.switch input:checked ~ span:before {
+    left: calc(100% - 24px);
+}
+
+/*range*/
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 0;
+}
+
+input[type=range] + span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: rgba(77,161,255,.2);
+    @apply rounded-md;
+}
+input[type=range]::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.04);
+    background: #fff;
+    border-radius: 59%;
+    border: 1px solid #D0D7DD;
+    position: relative;
+    z-index: 1;
+    transition: .2s;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: rgba(77,161,255,.2);
+    border-radius: 6px;
+}
+input[type=range]::-moz-range-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.04);
+    background: #fff;
+    border-radius: 59%;
+    border: 1px solid #D0D7DD;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: rgba(77,161,255,.2);
+    border-radius: 6px;
+}
+input[type=range]::-ms-fill-lower {
+    background: #2a6495;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+    background: #3071a9;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.04);
+    background: #fff;
+    border-radius: 59%;
+    border: 1px solid #D0D7DD;
+}
+input[type=range]:hover::-webkit-slider-thumb  {
+    border: 1px solid rgba(77,161,255,1);
+}
+
+select {
+    @apply border-none bg-transparent text-xs text-blue-900;
+    appearance: none;
+}
+
+.hljs-attribute {
+    padding-left: 30px;
+}
+
+.hljs {
+    height: auto;
+    overflow: visible;
+    display: block;
+    padding-bottom: 40px;
+}
