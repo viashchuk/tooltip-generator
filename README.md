@@ -1,9 +1,8 @@
 # Tooltip Generator
 
-Tooltip Generator is a pure CSS, HTML tooltip generator web app built in Vue.js.
+You urgently need a tooltip, but are you so lazy to do it? There is a way out! This tool allows you to generate CSS and HTML code with a simple set of actions in the right sidebar that you can simply copy and paste 😉 
 
-How does it work?
-Just set the values you need in the settings and copy the finished CSS, HTML code
+I hope it saves you time!
 
 ![alt text](public/screenshot.png "Tooltip Generator Screenshot")
 
