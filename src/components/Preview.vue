@@ -27,8 +27,10 @@
     </div>
 
     <p class="text-center py-3 text-sm">
-      This project made with ❤️ by
-      <a href="https://github.com/viashchuk" class="text-blue-600" target="_blank">viashchuk</a>
+      This project is open
+      <a href="https://github.com/viashchuk/tooltip-generator" class="text-blue-600">source on github</a>.
+      Made with ❤️ by
+      <a href="https://github.com/viashchuk" class="text-blue-600">viashchuk</a>
     </p>
   </div>
 </template>
