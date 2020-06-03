@@ -4,9 +4,9 @@
 ## Tooltip Generator
 > A tool to generate css code for tooltips
 
-You urgently need a tooltip, but are you so lazy to do it? There is a way out! This tool allows you to generate CSS and HTML code with a simple set of actions in the right sidebar that you can simply copy and paste 😉 
+Do you urgently need a tooltip, but you are lazy to do it from scratch? There is a way out! This tool allows you to generate CSS and HTML code with a simple set of actions in the right sidebar that you can simply copy and paste 😉
 
-I hope it saves you time!
+I hope it will save you time!
 
 <kbd>
     <img src="public/demo.gif" alt="Demo video">
