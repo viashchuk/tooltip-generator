@@ -29,7 +29,7 @@ Here is a working live demo:  https://viashchuk.github.io/tooltip-generator
 npm install
 
 # serve with hot reload at localhost:8080
-npm start
+npm serve
 
 # build for production with minification
 npm run build

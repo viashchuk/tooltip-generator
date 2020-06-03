@@ -1,7 +1,7 @@
 <template>
   <div class="mt-6">
     <h3 class="mb-3 text-gray-1000 font-medium text-sm">Size triangle</h3>
-    <div class="flex justify-between">
+    <div class="flex justify-between items-center">
       <div class="w-50w12">
         <input-number v-model="form.triangle_width" title="width" @input="sync"/>
       </div>
