@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="6px" viewBox="0 0 9 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>chevron</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ooto-Productivity-Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ooto-Files-board" transform="translate(-1392.000000, -241.000000)" fill="#808FA3" stroke="#808FA3" stroke-width="0.3">
+            <g id="side-app---ooto-space" transform="translate(1188.000000, 101.000000)">
+                <g id="file-details" transform="translate(22.000000, 137.000000)">
+                    <path d="M188.239281,8.78981783 C188.448586,8.99110282 188.455159,9.32399218 188.253874,9.5334285 C188.150668,9.64071038 188.012753,9.69474573 187.874707,9.69474573 C187.743497,9.69474573 187.612287,9.64610076 187.510264,9.54802199 L184.091969,6.26119973 C183.988894,6.16206917 183.930651,6.02507442 183.930651,5.88203191 C183.930651,5.73912088 183.988894,5.60212613 184.091969,5.50299557 L187.510264,2.21617331 C187.719569,2.01488831 188.052589,2.02133049 188.253874,2.2307668 C188.455159,2.44020311 188.448586,2.77309247 188.239281,2.97437747 L185.215273,5.88203191 L188.239281,8.78981783 Z" id="chevron" transform="translate(186.165651, 5.882047) scale(-1, 1) rotate(-90.000000) translate(-186.165651, -5.882047) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
