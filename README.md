@@ -2,7 +2,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-ff69b4)](https://github.com/viashchuk/tooltip-generator/pulls)
 
 ## Tooltip Generator
-> A tool to generate css code for tooltips
+> A tool to generate CSS code for tooltips
 
 Do you urgently need a tooltip, but you are lazy to do it from scratch? There is a way out! This tool allows you to generate CSS and HTML code with a simple set of actions in the right sidebar that you can simply copy and paste 😉
 
@@ -29,7 +29,7 @@ Here is a working live demo:  https://viashchuk.github.io/tooltip-generator
 npm install
 
 # serve with hot reload at localhost:8080
-npm serve
+npm run serve
 
 # build for production with minification
 npm run build
